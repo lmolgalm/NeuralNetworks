@@ -20,7 +20,7 @@ stream = p.open(format=FORMAT,
                 input=True,
                 frames_per_buffer=CHUNK) #buffer
 
-#srat recording
+#start recording
 
 print("* recording")
 
