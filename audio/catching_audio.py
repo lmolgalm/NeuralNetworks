@@ -1,3 +1,4 @@
+
 import pyaudio
 import wave
 
@@ -7,7 +8,7 @@ CHUNK = 1024
 FORMAT = pyaudio.paInt16   #16bit
 CHANNELS = 1               #mono sound
 RATE = 44100               #sample rate
-RECORD_SECONDS = 5
+RECORD_SECONDS = 2
 WAVE_OUTPUT_FILENAME = "output.wav"
 
 p = pyaudio.PyAudio()
