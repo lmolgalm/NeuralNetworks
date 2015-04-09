@@ -15,6 +15,7 @@ types = {
 
 # open file, that we have got from audio we need to do that
 # cause pyaudio doesn't work with python3.4
+#wav = wave.open("./audio/output.wav", mode="r")
 wav = wave.open("output.wav", mode="r")
 #(number of channels, byte per sample, frame per second, number of frames,
 #compression type, compression name)
@@ -70,7 +71,7 @@ axes = plt.subplot(1, 1, n+1, axisbg="k")
 axes.plot(new_test, 'g')
 axes.xaxis.set_major_formatter(ticker.NullFormatter())
 axes.yaxis.set_major_formatter(ticker.NullFormatter())
-
+#plt.savefig("./audio/wave1", dpi=DPI)
 plt.savefig("wave1", dpi=DPI)
 plt.show()
 
